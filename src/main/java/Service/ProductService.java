@@ -17,5 +17,15 @@ public class ProductService {
         return productRepository.findAll();
     }
 
+    public Product save(Product product) {
+        return productRepository.save(product);
+    }
 
+    public Product update(Product product) {
+        return productRepository.update(product);
+    }
+
+    public void deleteById(Long id) {
+        productRepository.deleteByID(id);
+    }
 }
